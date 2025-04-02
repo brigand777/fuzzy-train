@@ -23,7 +23,7 @@ st.title("🔀 Crypto Portfolio Optimizer (Dynamic HRB, MVO, EW)")
 # Load merged price data from Parquet.
 @st.cache_data
 def load_data():
-    return pd.read_parquet("data/prices.parquet")
+    return pd.read_parquet("Data/prices.parquet")
 
 data = load_data()
 available_dates = data.index.sort_values()
